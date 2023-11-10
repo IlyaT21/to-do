@@ -7,11 +7,21 @@
 	<title>To-Do List</title>
 </head>
 <body>
-	<header>
-
-	</header>
 	<main class="main" id="main">
-
+		<aside class="sidebar">
+			<button id="pendingTasks" class="active">
+				Pending Tasks
+			</button>
+			<button id="completedTasks">
+				Completed Tasks
+			</button>
+			<button id="addNewTask">
+				Add New Task
+			</button>
+		</aside>
+		<div class="main-display" id="main-display">
+			<!-- populated by javascript -->
+		</div>
 	</main>
 	<script src="main.js"></script>
 </body>

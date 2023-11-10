@@ -1,11 +1,12 @@
-class TodoItem {
-  constructor(title, description, priority = 'low', dateAdded, completed = false, dateCompleted) {
+export default class TodoItem {
+  constructor(title, description, priority, dueDate) {
     this.title = title;
-		this.description = description;
-		this.priority = priority;
+    this.description = description;
+    this.priority = priority;
 		this.dateAdded = new Date();
-		this.completed = completed;
-		this.dateCompleted = dateCompleted
+    this.dueDate = dueDate;
+    this.completed = false;
+    this.dateCompleted = null;
   }
 
   toggle() {
